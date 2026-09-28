@@ -13,7 +13,7 @@ const homeCopy = {
 
 export default function HomePage() {
   const { language } = useLanguage();
-  const projectOrder = ["fantasia", "stylebook", "letitgreen", "tcd-map"];
+  const projectOrder = ["fantasia", "stylebook", "emergency-mask", "letitgreen", "tcd-map"];
   const orderedProjects = [...projects].sort((a, b) => projectOrder.indexOf(a.slug) - projectOrder.indexOf(b.slug));
   return <SiteShell active="projects"><main>
     <section className="home-hero container">

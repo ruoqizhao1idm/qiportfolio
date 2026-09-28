@@ -4,6 +4,8 @@ import { SiteShell } from "../components/site-shell";
 import { useLanguage } from "../components/language";
 
 const resume = "https://www.dropbox.com/scl/fi/0w9pfozgigqzrbn04w3q0/RuoqiZhao_CV.pdf?rlkey=d8hiqfdd0hucto2z3u2qpwlo9&st=jayt14rz&dl=0";
+const email = "mailto:zrqqqq123@163.com";
+const linkedIn = "https://www.linkedin.com/in/ruoqi-zhao-37bb553a2/?locale=en-US";
 
 const capabilities = {
   en: [
@@ -47,7 +49,11 @@ export default function AboutPage() {
       <p className="section-index">03 · {zh ? "产品设计之外" : "Outside product design"}</p>
       <h2>{zh ? "互动叙事、3D 与情感界面。" : "Interactive narrative, 3D and emotional interfaces."}</h2>
       <p>{zh ? "这些实验让我在常规产品流程之外继续探索选择、空间、情绪与媒介。" : "These experiments let me keep exploring choice, space, emotion and media beyond conventional product workflows."}</p>
-      <div className="contact-links"><a href={resume} target="_blank" rel="noreferrer">{zh ? "简历" : "Resume"} ↗</a><a href="mailto:zhaor3@tcd.ie">{zh ? "邮箱" : "Email"} ↗</a><span>LinkedIn · {zh ? "链接待补充" : "link pending"}</span></div>
+      <div className="contact-links">
+        <a href={email}>{zh ? "邮箱" : "Email"} ↗</a>
+        <a href={linkedIn} target="_blank" rel="noreferrer">{zh ? "领英" : "LinkedIn"} ↗</a>
+        <a href={resume} target="_blank" rel="noreferrer">{zh ? "简历" : "Resume"} ↗</a>
+      </div>
     </section>
   </main></SiteShell>;
 }
